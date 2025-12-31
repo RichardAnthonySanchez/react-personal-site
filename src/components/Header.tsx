@@ -14,10 +14,14 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-sm border-b-2 border-foreground">
-      <div className="container py-4 md:py-5">
+      <div className="container py-2 md:py-3">
         <div className="flex items-center justify-between">
-          <a href="#" className="font-serif text-xl font-bold tracking-tight hover:text-primary transition-colors">
-            Tony Sanchez
+          <a href="#" className="flex items-center hover:opacity-80 transition-opacity">
+            <img
+              src="/logo-charcoal.svg"
+              alt="Tony Sanchez Logo"
+              className="h-20 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
