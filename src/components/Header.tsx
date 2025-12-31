@@ -34,7 +34,7 @@ const Header = () => {
               </a>
             ))}
             <Button variant="default" size="sm" asChild>
-              <a href="#contact">HIRE ME!</a>
+              <a href="#contact">LET'S TALK</a>
             </Button>
           </nav>
 
@@ -64,9 +64,10 @@ const Header = () => {
               </a>
             ))}
             <Button variant="default" size="sm" className="w-fit" asChild>
-              <a href="#contact" onClick={() => setIsMenuOpen(false)}>HIRE ME!</a>
+              <a href="#contact" onClick={() => setIsMenuOpen(false)}>LET'S TALK</a>
             </Button>
           </nav>
+
         )}
       </div>
       <div className="border-t border-foreground" />
