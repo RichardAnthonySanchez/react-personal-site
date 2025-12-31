@@ -16,8 +16,17 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+
+      {/* Global Texture Filters */}
+      <svg className="hidden">
+        <filter id="halftone">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="contrast" />
+        </filter>
+      </svg>
     </div>
   );
 };
+
 
 export default Index;

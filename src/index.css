@@ -6,64 +6,57 @@
 
 @layer base {
   :root {
-    /* Cream - Main Background */
-    --background: 40 33% 97%;
-    --foreground: 20 8% 22%;
+    /* Manilla - Main Background (warmer) */
+    --background: 42 35% 92%;
+    --foreground: 20 8% 18%;
 
-    /* Champagne - Cards/Secondary surfaces */
-    --card: 38 38% 91%;
-    --card-foreground: 20 8% 22%;
+    /* Kraft/Champagne - Cards/Secondary surfaces */
+    --card: 38 30% 88%;
+    --card-foreground: 20 8% 18%;
 
-    /* Popover uses cream */
-    --popover: 40 33% 97%;
-    --popover-foreground: 20 8% 22%;
+    /* Popover */
+    --popover: 42 35% 92%;
+    --popover-foreground: 20 8% 18%;
 
     /* Flame - Primary accent (burnt orange) */
     --primary: 13 68% 54%;
-    --primary-foreground: 40 33% 97%;
+    --primary-foreground: 42 35% 92%;
 
-    /* Champagne for secondary */
-    --secondary: 38 38% 91%;
-    --secondary-foreground: 20 8% 22%;
+    /* Kraft for secondary */
+    --secondary: 35 25% 85%;
+    --secondary-foreground: 20 8% 18%;
 
-    /* Muted uses lighter champagne */
-    --muted: 38 25% 88%;
+    /* Terracotta - Accent variation */
+    --terracotta: 13 55% 45%;
+
+    /* Muted */
+    --muted: 38 20% 82%;
     --muted-foreground: 20 8% 40%;
 
-    /* Accent uses flame */
+    /* Accent */
     --accent: 13 68% 54%;
-    --accent-foreground: 40 33% 97%;
+    --accent-foreground: 42 35% 92%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 33% 97%;
+    --destructive-foreground: 42 35% 92%;
 
     /* Charcoal border */
-    --border: 20 8% 22%;
-    --input: 20 8% 80%;
+    --border: 20 8% 18%;
+    --input: 20 8% 75%;
     --ring: 13 68% 54%;
 
-    --radius: 0.25rem;
+    --radius: 0rem;
+    /* Harder edges for analog feel */
 
-    /* Custom tokens */
-    --charcoal: 20 8% 22%;
-    --cream: 40 33% 97%;
-    --champagne: 38 38% 91%;
-    --flame: 13 68% 54%;
+    /* Texture */
+    --noise-opacity: 0.12;
+    --grid-opacity: 0.05;
 
     /* Typography */
     --font-serif: 'Libre Baskerville', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
-
-    /* Sidebar - keeping defaults */
-    --sidebar-background: 40 33% 97%;
-    --sidebar-foreground: 20 8% 22%;
-    --sidebar-primary: 13 68% 54%;
-    --sidebar-primary-foreground: 40 33% 97%;
-    --sidebar-accent: 38 38% 91%;
-    --sidebar-accent-foreground: 20 8% 22%;
-    --sidebar-border: 20 8% 22%;
-    --sidebar-ring: 13 68% 54%;
   }
+
 
   .dark {
     /* Dark mode - inverted with charcoal bg */
@@ -112,10 +105,29 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased relative;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  /* Global Noise Overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: var(--noise-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif;
   }
 }
@@ -123,6 +135,17 @@
 @layer components {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, hsl(var(--foreground) / var(--grid-opacity)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--foreground) / var(--grid-opacity)) 1px, transparent 1px);
+  }
+
+  .halftone-effect {
+    filter: url(#halftone);
   }
 }
 
@@ -139,6 +162,7 @@
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -149,6 +173,7 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
