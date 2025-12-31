@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# Tony Sanchez | SEO Tool Developer & Interactive Experience Specialist
 
-## Project info
+I build **custom SEO tools** and **high-performance interactive experiences** for marketing agencies. My focus is on creating lightweight, data-driven utilities that automate workflows and deliver measurable value.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![Tony Sanchez Showcase Preview](./assets/showcase-preview.jpg)
 
-## How can I edit this code?
+## 🎯 What I Do
 
-There are several ways of editing your application.
+I specialize in developing internal tools that help agencies scale their operations without scaling headcount. Think semantic analysis for internal linking, no-code data visualization widgets, and content migration utilities—all built with **TypeScript** and designed for real-world agency use cases.
 
-**Use Lovable**
+**Core competencies:**
+- **Custom SEO Utilities:** Building high-performance, client-side analysis tools.
+- **Data Visualization:** Creating interactive, embeddable widgets for non-technical stakeholders.
+- **Workflow Automation:** Streamlining repetitive SEO and content tasks to save hundreds of hours.
+- **Branded Deliverables:** Developing polished, technical tools that agencies can offer as premium services.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Languages:** TypeScript, JavaScript, Python, C++ (DSP focus)
+- **Frontend:** React, Vite, Tailwind CSS, Web APIs
+- **Architecture:** Modular, type-safe development for complex client-side logic
+- **Design:** Modern, technical aesthetics (Analog/Neo-brutalist influence)
 
-**Use your preferred IDE**
+## 🚀 Featured Projects
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🔗 [Open Internal Link Juicer](https://link-juicer.tonysanchez.dev/)
+A lightweight, client-side tool for discovering internal link opportunities using semantic relevance.
+- **Repo:** [GitHub](https://github.com/RichardAnthonySanchez/open-internal-link-juicer)
+- **Tech:** TypeScript
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 📊 [Easy Chart Widget](https://charts.tonysanchez.dev/)  
+A single-page, no-code tool that turns JSON data into professional, embeddable charts for client reports.
+- **Repo:** [GitHub](https://github.com/RichardAnthonySanchez/easy-chart-widget)
+- **Tech:** TypeScript
 
-Follow these steps:
+### 🔄 [WP2GHOST Migration Tool](https://wp2ghost.tonysanchez.dev/)
+Seamlessly convert WordPress XML exports to Ghost JSON imports while preserving SEO metadata.
+- **Repo:** [GitHub](https://github.com/RichardAnthonySanchez/wp2ghost)
+- **Tech:** TypeScript
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧪 Currently Exploring
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🤖 Agentic Assistant Workflows
+Integrating AI into development and client-facing tools to automate semantic analysis and SEO strategy.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🎵 Digital Signal Processing (DSP)
+Diving into audio programming with **JUCE**, **Faust**, and **HISE**. Applying systematic thinking from web automation to the world of sound synthesis and plugin development.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📫 Let's Connect
 
-**Edit a file directly in GitHub**
+- **Website:** [tonysanchez.dev](https://tonysanchez.dev)
+- **Blog:** [blog.tonysanchez.dev](https://blog.tonysanchez.dev/)  
+- **Email:** [tony@tonysanchez.dev](mailto:tony@tonysanchez.dev)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+💡 *I'm always open to discussing SEO tool architecture or collaboration on agency automation projects. Let's chat.*
