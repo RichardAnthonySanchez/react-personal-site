@@ -7,8 +7,8 @@ const projects = [
       "A lightweight, client-side tool for discovering internal link opportunities using semantic relevance instead of manual guesswork. This TypeScript-based utility helps agencies streamline SEO workflows by automatically identifying high-value internal linking opportunities.",
     agencyValue: "Reduce content audit time by 70% while improving link strategy quality.",
     tech: "TypeScript",
-    liveUrl: "#",
-    repoUrl: "#",
+    liveUrl: "https://link-juicer.tonysanchez.dev/",
+    repoUrl: "https://github.com/RichardAnthonySanchez/open-internal-link-juicer",
   },
   {
     title: "EASY CHART WIDGET",
@@ -16,8 +16,8 @@ const projects = [
       "A single-page, no-code tool that turns JSON data into embeddable charts for client reports and presentations. Built for agencies serving non-technical clients, this tool allows anyone to transform complex SEO data into visual stories.",
     agencyValue: "Create professional, branded data visualizations in minutes, not hours.",
     tech: "TypeScript",
-    liveUrl: "#",
-    repoUrl: "#",
+    liveUrl: "https://charts.tonysanchez.dev/",
+    repoUrl: "https://github.com/RichardAnthonySanchez/easy-chart-widget",
   },
   {
     title: "WP2GHOST MIGRATION TOOL",
@@ -25,8 +25,8 @@ const projects = [
       "Forked and enhanced from jonhoo/wp2ghost. Seamlessly convert WordPress XML exports to Ghost JSON imports. The TypeScript core ensures reliable, repeatable migrations that preserve content integrity and SEO metadata.",
     agencyValue: "Offer content migration as a premium service with minimal technical overhead.",
     tech: "TypeScript",
-    liveUrl: "#",
-    repoUrl: "#",
+    liveUrl: "https://wp2ghost.tonysanchez.dev/",
+    repoUrl: "https://github.com/RichardAnthonySanchez/wp2ghost",
   },
 ];
 
